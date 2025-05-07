@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "329472501858",
+    "project_id": "enrollmentsystemprojectncba",
+    "storage_bucket": "enrollmentsystemprojectncba.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329472501858:android:a71dd54b792952b76b493b",
+        "android_client_info": {
+          "package_name": "com.example.enrollmentsystemproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU9_mYkVuDwbxNwSWUliFfGJ6QLYL_6R8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
