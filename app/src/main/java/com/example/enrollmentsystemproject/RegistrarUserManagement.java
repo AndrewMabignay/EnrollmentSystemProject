@@ -44,7 +44,7 @@ public class RegistrarUserManagement extends AppCompatActivity {
     }
 
     FirebaseDatabase database;
-    DatabaseReference userReference;
+    DatabaseReference studentReference, userReference;
 
     private void Interaction() {
         // SECURITY FIELDS
@@ -121,24 +121,42 @@ public class RegistrarUserManagement extends AppCompatActivity {
             return;
         }
 
+        // STUDENT RECORDS
+        TreeMap<String, Object> studentData = new TreeMap<>();
+        studentData.put("StudentNumber", studentNoField);
+        studentData.put("StudentName", studentNameField);
+        studentData.put("StudentCourse", studentCourseField);
+        studentData.put("StudentMajor", studentMajorField);
+        studentData.put("StudentYearLevel", studentYearLevelField);
+
+        database = FirebaseDatabase.getInstance();
+        studentReference = database.getReference("student");
+
+        String key = studentReference.push().getKey();
+        studentData.put("Key", key);
+
+        studentReference.child(key).setValue(studentData).addOnCompleteListener(task -> {
+            if (!task.isSuccessful()) {
+                Toast.makeText(RegistrarUserManagement.this, "Failed to add user", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // STUDENT ACCOUNT
         TreeMap<String, Object> userData = new TreeMap<>();
-        userData.put("StudentNumber", studentNoField);
-        userData.put("StudentName", studentNameField);
-        userData.put("StudentCourse", studentCourseField);
-        userData.put("StudentMajor", studentMajorField);
-        userData.put("StudentYearLevel", studentYearLevelField);
+
         userData.put("Username", studentNoField);
         userData.put("Password", studentNoField);
+        userData.put("Role", "Student");
 
         database = FirebaseDatabase.getInstance();
         userReference = database.getReference("user");
 
-        String key = userReference.push().getKey();
+        key = userReference.push().getKey();
         userData.put("Key", key);
 
         userReference.child(key).setValue(userData).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
-                Toast.makeText(RegistrarUserManagement.this, "New User Added", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegistrarUserManagement.this, "New Student and User Added", Toast.LENGTH_SHORT).show();
                 studentNo.getText().clear();
                 studentName.getText().clear();
                 studentCourse.getText().clear();
@@ -159,7 +177,7 @@ public class RegistrarUserManagement extends AppCompatActivity {
 
     private void SearchUserInteraction(String studentNoField) {
         database = FirebaseDatabase.getInstance();
-        userReference = database.getReference("user");
+        userReference = database.getReference("student");
 
         Query query = userReference.orderByChild("StudentNumber").equalTo(studentNoField);
         query.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -199,7 +217,7 @@ public class RegistrarUserManagement extends AppCompatActivity {
 
     private void EditUserInteraction(String studentNoField, String studentNameField, String studentCourseField, String studentMajorField, String studentYearField) {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("user");
+        DatabaseReference myRef = database.getReference("student");
 
         Query query = myRef.orderByChild("StudentNumber").equalTo(studentNoField);
         query.addListenerForSingleValueEvent(new ValueEventListener() {
