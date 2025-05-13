@@ -86,7 +86,8 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(studentIntent);
                             return;
                         case "Admin":
-                            Intent adminIntent = new Intent(MainActivity.this, RegistrarUserManagement.class);
+                            Intent adminIntent = new Intent(MainActivity.this, RegistrarMainMenu.class);
+                            adminIntent.putExtra("userID", usernameField);
                             startActivity(adminIntent);
                             return;
                     }

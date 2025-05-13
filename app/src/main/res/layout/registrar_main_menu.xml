@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#031f0c"
+        android:elevation="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/UserProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="STUDENT MAIN MENU" />-->
+
+    <!-- MAIN MENU | FIRST ROW -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingHorizontal="30dp"
+        android:layout_marginVertical="30dp">
+
+        <!-- USER MANAGEMENT -->
+        <LinearLayout
+            android:id="@+id/UserManagement"
+            android:layout_width="0dp"
+            android:layout_height="135dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@drawable/card_view_template"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\uf509"
+                android:textSize="24dp"
+                android:textColor="#c9f0d8"
+                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USER MANAGEMENT"
+                android:textSize="12dp"
+                android:textColor="#c9f0d8"
+                android:letterSpacing="0.02"
+                android:lineHeight="26dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAlignment="center"
+                android:paddingHorizontal="20dp"/>
+
+        </LinearLayout>
+
+        <!-- LOG OUT -->
+        <LinearLayout
+            android:id="@+id/RegistrarLogout"
+            android:layout_width="0dp"
+            android:layout_height="135dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@drawable/card_view_template">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\uf2f5"
+                android:textSize="24dp"
+                android:textColor="#c9f0d8"
+                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIGN OUT"
+                android:textSize="12dp"
+                android:textColor="#c9f0d8"
+                android:letterSpacing="0.02"
+                android:lineHeight="24dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAlignment="center"
+                android:paddingHorizontal="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- MAIN MENU | SECOND ROW -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+    </LinearLayout>
+
+</LinearLayout>

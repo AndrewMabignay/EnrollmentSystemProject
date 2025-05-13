@@ -5,6 +5,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DataSnapshot;
@@ -131,6 +132,13 @@ public class RegistrarUserManagement extends AppCompatActivity {
 
         database = FirebaseDatabase.getInstance();
         studentReference = database.getReference("student");
+
+        // CHECK FOR DUPLICATE STUDENTNUMBER
+
+
+
+
+        //
 
         String key = studentReference.push().getKey();
         studentData.put("Key", key);

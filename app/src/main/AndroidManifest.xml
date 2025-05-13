@@ -26,6 +26,7 @@
         <activity android:name=".StudentMainMenu" />
         <activity android:name=".StudentPersonalInformation" />
         <activity android:name=".StudentChangePassword" />
+        <activity android:name=".RegistrarMainMenu" />
         <activity android:name=".RegistrarUserManagement" />
     </application>
 
