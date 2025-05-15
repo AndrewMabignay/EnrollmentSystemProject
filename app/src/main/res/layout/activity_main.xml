@@ -99,7 +99,8 @@
                         android:fontFamily="@font/poppins_regular"
                         android:textSize="14sp"
                         android:padding="0dp"
-                        android:gravity="center_vertical" />
+                        android:gravity="center_vertical"
+                        android:inputType="textPassword" />
 
                 </LinearLayout>
 

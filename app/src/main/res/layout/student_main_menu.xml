@@ -14,20 +14,76 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:paddingHorizontal="30dp"
+        android:layout_marginVertical="30dp">
 
         <!-- PERSONAL INFORMATION -->
         <LinearLayout
             android:id="@+id/PersonalInformation"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:clickable="true">
+            android:layout_width="0dp"
+            android:layout_height="135dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:gravity="center"
+            android:background="@drawable/card_view_template"
+            android:layout_marginRight="30dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PERSONAL INFORMATION"/>
+                android:text="\uf4ff"
+                android:textSize="24dp"
+                android:textColor="#c9f0d8"
+                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PERSONAL INFORMATION"
+                android:textSize="12dp"
+                android:textColor="#c9f0d8"
+                android:letterSpacing="0.02"
+                android:lineHeight="24dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAlignment="center"
+                android:paddingHorizontal="20dp"/>
+
+        </LinearLayout>
+
+        <!-- CHANGE PASSWORD -->
+        <LinearLayout
+            android:id="@+id/ChangePassword"
+            android:layout_width="0dp"
+            android:layout_height="135dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:gravity="center"
+            android:background="@drawable/card_view_template">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\uf023"
+                android:textSize="24dp"
+                android:textColor="#c9f0d8"
+                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHANGE PASSWORD"
+                android:textSize="12dp"
+                android:textColor="#c9f0d8"
+                android:letterSpacing="0.02"
+                android:lineHeight="24dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAlignment="center"
+                android:paddingHorizontal="20dp"/>
 
         </LinearLayout>
     </LinearLayout>
@@ -38,20 +94,76 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:paddingHorizontal="30dp"
+        android:layout_marginBottom="30dp">
 
-        <!-- PERSONAL INFORMATION -->
+        <!-- DEFICIENCIES -->
         <LinearLayout
-            android:id="@+id/ChangePassword"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:clickable="true">
+            android:id="@+id/Deficiencies"
+            android:layout_width="0dp"
+            android:layout_height="135dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:gravity="center"
+            android:background="@drawable/card_view_template"
+            android:layout_marginRight="30dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CHANGE PASSWORD"/>
+                android:text="\uf06a"
+                android:textSize="24dp"
+                android:textColor="#c9f0d8"
+                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DEFICIENCIES"
+                android:textSize="12dp"
+                android:textColor="#c9f0d8"
+                android:letterSpacing="0.02"
+                android:lineHeight="24dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAlignment="center"
+                android:paddingHorizontal="20dp"/>
+
+        </LinearLayout>
+
+        <!-- ANNOUNCEMENT -->
+        <LinearLayout
+            android:id="@+id/Announcements"
+            android:layout_width="0dp"
+            android:layout_height="135dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:gravity="center"
+            android:background="@drawable/card_view_template">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\uf0a1"
+                android:textSize="24dp"
+                android:textColor="#c9f0d8"
+                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ANNOUNCEMENTS"
+                android:textSize="12dp"
+                android:textColor="#c9f0d8"
+                android:letterSpacing="0.02"
+                android:lineHeight="24dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAlignment="center"
+                android:paddingHorizontal="20dp"/>
 
         </LinearLayout>
     </LinearLayout>
@@ -62,20 +174,76 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:paddingHorizontal="30dp"
+        android:layout_marginBottom="30dp">
 
-        <!-- PERSONAL INFORMATION -->
+        <!-- GRADES -->
         <LinearLayout
-            android:id="@+id/Logout"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:clickable="true">
+            android:id="@+id/Grades"
+            android:layout_width="0dp"
+            android:layout_height="135dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:gravity="center"
+            android:background="@drawable/card_view_template"
+            android:layout_marginRight="30dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="LOG OUT"/>
+                android:text="\uf15c"
+                android:textSize="24dp"
+                android:textColor="#c9f0d8"
+                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GRADES"
+                android:textSize="12dp"
+                android:textColor="#c9f0d8"
+                android:letterSpacing="0.02"
+                android:lineHeight="24dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAlignment="center"
+                android:paddingHorizontal="20dp"/>
+
+        </LinearLayout>
+
+        <!-- LOGOUT -->
+        <LinearLayout
+            android:id="@+id/Logout"
+            android:layout_width="0dp"
+            android:layout_height="135dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:gravity="center"
+            android:background="@drawable/card_view_template">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\uf2f5"
+                android:textSize="24dp"
+                android:textColor="#c9f0d8"
+                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIGN OUT"
+                android:textSize="12dp"
+                android:textColor="#c9f0d8"
+                android:letterSpacing="0.02"
+                android:lineHeight="24dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAlignment="center"
+                android:paddingHorizontal="20dp"/>
 
         </LinearLayout>
     </LinearLayout>

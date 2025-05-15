@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- PSA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="PSA"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@color/lightGray"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="N/A"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"/>
+
+    </LinearLayout>
+
+    <!-- FORM 137 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Form 137"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@color/lightGray"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="OK"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"/>
+
+    </LinearLayout>
+
+    <!-- GOOD MORAL -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Good Moral"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@color/lightGray"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="OK"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"/>
+
+    </LinearLayout>
+
+    <!-- EXAM -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Exam"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@color/lightGray"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="OK"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"/>
+
+    </LinearLayout>
+
+    <!-- INTERVIEW -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Interview"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@color/lightGray"/>
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="OK"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"/>
+
+    </LinearLayout>
+</LinearLayout>

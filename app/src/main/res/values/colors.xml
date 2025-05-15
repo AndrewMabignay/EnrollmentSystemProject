@@ -2,4 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <!-- LIGHT COLOR BLENDS -->
+    <color name="softBackground">#d2f5dd</color>
+    <color name="lighterTint">#7ee3a2</color>
+    <color name="lightGreen">#c9f0d8</color>
+    <color name="accent">#e7ffe7</color>
+    <color name="textOnLight">#246d3d</color>
+
+
+    <color name="lightGray">#dbe6db</color>
 </resources>

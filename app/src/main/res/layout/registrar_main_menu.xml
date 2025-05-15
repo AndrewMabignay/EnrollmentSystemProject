@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!-- HEADER USER PROFILE NAME -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -40,8 +41,8 @@
             android:layout_height="135dp"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center"
             android:clickable="true"
+            android:gravity="center"
             android:background="@drawable/card_view_template"
             android:layout_marginRight="30dp">
 
