@@ -133,13 +133,6 @@ public class RegistrarUserManagement extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         studentReference = database.getReference("student");
 
-        // CHECK FOR DUPLICATE STUDENTNUMBER (MAINTENANCE)
-
-
-
-
-        //
-
         String key = studentReference.push().getKey();
         studentData.put("Key", key);
 

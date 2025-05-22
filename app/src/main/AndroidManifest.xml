@@ -28,6 +28,10 @@
         <activity android:name=".StudentChangePassword" />
         <activity android:name=".RegistrarMainMenu" />
         <activity android:name=".RegistrarUserManagement" />
+        <activity android:name=".RegistrarDeficiency" />
+        <activity android:name=".StudentDeficiency" />
+        <activity android:name=".StudentGrade" />
+        <activity android:name=".ProfessionMain" />
     </application>
 
 </manifest>

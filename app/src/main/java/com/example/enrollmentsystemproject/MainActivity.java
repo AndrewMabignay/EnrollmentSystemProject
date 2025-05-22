@@ -90,6 +90,11 @@ public class MainActivity extends AppCompatActivity {
                             adminIntent.putExtra("userID", usernameField);
                             startActivity(adminIntent);
                             return;
+                        case "Professor":
+                            Intent professorIntent = new Intent(MainActivity.this, ProfessionMain.class);
+                            professorIntent.putExtra("userID", usernameField);
+                            startActivity(professorIntent);
+                            return;
                     }
                 }
 

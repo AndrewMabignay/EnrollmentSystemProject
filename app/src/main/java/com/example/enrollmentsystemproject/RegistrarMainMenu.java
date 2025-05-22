@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class RegistrarMainMenu extends AppCompatActivity {
     private String userID = "";
-    private LinearLayout userManagement, logout;
+    private LinearLayout userManagement, logout, deficiency;
     private TextView userProfileName;
 
     @Override
@@ -27,6 +27,7 @@ public class RegistrarMainMenu extends AppCompatActivity {
 
         userManagement = (LinearLayout) findViewById(R.id.UserManagement);
         logout = (LinearLayout) findViewById(R.id.RegistrarLogout);
+        deficiency = (LinearLayout) findViewById(R.id.Deficiencies);
     }
 
     private void Interaction() {
@@ -40,6 +41,11 @@ public class RegistrarMainMenu extends AppCompatActivity {
 
         logout.setOnClickListener(e -> {
             Intent intent = new Intent(RegistrarMainMenu.this, MainActivity.class);
+            startActivity(intent);
+        });
+
+        deficiency.setOnClickListener(e -> {
+            Intent intent = new Intent(RegistrarMainMenu.this, RegistrarDeficiency.class);
             startActivity(intent);
         });
     }
