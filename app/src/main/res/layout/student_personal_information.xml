@@ -2,126 +2,168 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#e6f2ec"
+    android:padding="16dp">
 
+    <!-- Header -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Personal Information" />
+        android:text="Personal Information"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginLeft="9dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="#031f0c" />
 
-
-    <!-- USER MANAGEMENT FORM -->
+    <!-- Form Container -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingHorizontal="25dp">
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:clipToPadding="false">
 
-        <!-- 1. STUDENT NO. FIELD -->
+        <!-- Student No -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="10dp">
+            android:layout_marginBottom="8dp">
 
             <TextView
-                android:layout_width="100dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:text="Student No." />
+                android:text="Student No."
+                android:textColor="#031f0c"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins_regular"/>
 
             <EditText
                 android:id="@+id/StudentNumberPersonalInformation"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#031f0c"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@android:color/transparent"/>
         </LinearLayout>
 
-
-        <!-- 2. STUDENT NAME FIELD -->
+        <!-- Student Name -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="10dp">
+            android:layout_marginBottom="8dp">
 
             <TextView
-                android:layout_width="100dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:text="Student Name" />
+                android:text="Student Name"
+                android:textColor="#031f0c"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins_regular"/>
 
             <EditText
                 android:id="@+id/StudentNamePersonalInformation"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#031f0c"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@android:color/transparent"/>
         </LinearLayout>
 
-        <!-- 3. COURSE FIELD -->
+        <!-- Course -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="10dp">
+            android:layout_marginBottom="8dp">
 
             <TextView
-                android:layout_width="100dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:text="Course" />
+                android:text="Course"
+                android:textColor="#031f0c"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins_regular"/>
 
             <EditText
                 android:id="@+id/StudentCoursePersonalInformation"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#031f0c"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@android:color/transparent"/>
         </LinearLayout>
 
-        <!-- 4. MAJOR FIELD -->
+        <!-- Major -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="10dp">
+            android:layout_marginBottom="8dp">
 
             <TextView
-                android:layout_width="100dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:text="Major" />
+                android:text="Major"
+                android:textColor="#031f0c"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins_regular"/>
 
             <EditText
                 android:id="@+id/StudentMajorPersonalInformation"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#031f0c"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@android:color/transparent" />
         </LinearLayout>
 
-        <!-- 5. YEAR LEVEL FIELD -->
+        <!-- Year Level -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="10dp">
+            android:gravity="center_vertical">
 
             <TextView
-                android:layout_width="100dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:text="Year Level" />
+                android:text="Year Level"
+                android:textColor="#031f0c"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins_regular"/>
 
             <EditText
                 android:id="@+id/StudentYearLevelPersonalInformation"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#031f0c"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@android:color/transparent" />
         </LinearLayout>
-    </LinearLayout>
 
+    </LinearLayout>
 </LinearLayout>

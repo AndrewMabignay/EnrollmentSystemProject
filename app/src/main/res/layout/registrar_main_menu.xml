@@ -2,21 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#e6f2ec">
 
     <!-- HEADER USER PROFILE NAME -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="50dp"
         android:background="#031f0c"
         android:elevation="20dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
         <TextView
             android:id="@+id/UserProfileName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""/>
+            android:text=""
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#c9f0d8"
+            android:paddingEnd="16dp"/>
 
     </LinearLayout>
 
@@ -113,39 +123,39 @@
         android:gravity="center">
 
         <!-- USER MANAGEMENT -->
-        <LinearLayout
-            android:id="@+id/Deficiencies"
-            android:layout_width="0dp"
-            android:layout_height="135dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:clickable="true"
-            android:gravity="center"
-            android:background="@drawable/card_view_template"
-            android:layout_marginRight="30dp">
+<!--        <LinearLayout-->
+<!--            android:id="@+id/Deficiencies"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="135dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="vertical"-->
+<!--            android:clickable="true"-->
+<!--            android:gravity="center"-->
+<!--            android:background="@drawable/card_view_template"-->
+<!--            android:layout_marginRight="30dp">-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="\uf509"
-                android:textSize="24dp"
-                android:textColor="#c9f0d8"
-                android:fontFamily="@font/font_awesome_6_free_solid_900"
-                android:layout_marginBottom="20dp"/>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="\uf509"-->
+<!--                android:textSize="24dp"-->
+<!--                android:textColor="#c9f0d8"-->
+<!--                android:fontFamily="@font/font_awesome_6_free_solid_900"-->
+<!--                android:layout_marginBottom="20dp"/>-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="DEFICIENCY"
-                android:textSize="12dp"
-                android:textColor="#c9f0d8"
-                android:letterSpacing="0.02"
-                android:lineHeight="26dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:textAlignment="center"
-                android:paddingHorizontal="20dp"/>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="DEFICIENCY"-->
+<!--                android:textSize="12dp"-->
+<!--                android:textColor="#c9f0d8"-->
+<!--                android:letterSpacing="0.02"-->
+<!--                android:lineHeight="26dp"-->
+<!--                android:fontFamily="@font/poppins_semibold"-->
+<!--                android:textAlignment="center"-->
+<!--                android:paddingHorizontal="20dp"/>-->
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
 
     </LinearLayout>
 

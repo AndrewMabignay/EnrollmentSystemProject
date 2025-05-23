@@ -27,11 +27,11 @@ public class RegistrarMainMenu extends AppCompatActivity {
 
         userManagement = (LinearLayout) findViewById(R.id.UserManagement);
         logout = (LinearLayout) findViewById(R.id.RegistrarLogout);
-        deficiency = (LinearLayout) findViewById(R.id.Deficiencies);
+//        deficiency = (LinearLayout) findViewById(R.id.Deficiencies);
     }
 
     private void Interaction() {
-        userProfileName.setText(String.valueOf(userID));
+        userProfileName.setText("Hello, " + String.valueOf(userID));
 
         userManagement.setOnClickListener(e -> {
             Intent intent = new Intent(RegistrarMainMenu.this, RegistrarUserManagement.class);
@@ -44,9 +44,9 @@ public class RegistrarMainMenu extends AppCompatActivity {
             startActivity(intent);
         });
 
-        deficiency.setOnClickListener(e -> {
-            Intent intent = new Intent(RegistrarMainMenu.this, RegistrarDeficiency.class);
-            startActivity(intent);
-        });
+//        deficiency.setOnClickListener(e -> {
+//            Intent intent = new Intent(RegistrarMainMenu.this, RegistrarDeficiency.class);
+//            startActivity(intent);
+//        });
     }
 }

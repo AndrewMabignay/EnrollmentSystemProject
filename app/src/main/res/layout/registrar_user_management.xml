@@ -1,152 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e6f2ec">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="User Management" />
-
-
-    <!-- USER MANAGEMENT FORM -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingHorizontal="25dp">
+        android:padding="24dp">
 
-        <!-- 1. STUDENT NO. FIELD -->
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Management"
+            android:textSize="26sp"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingBottom="16dp" />
+
+        <!-- Modern Card Style (Without MaterialCardView) -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="#e6f2ec"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="false"
+            app:cardBackgroundColor="#e6f2ec">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#e6f2ec">
+
+                <!-- Custom EditTexts -->
+                <EditText
+                    android:id="@+id/StudentNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Student Number"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:inputType="text"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColorHint="#333446" />
+
+                <EditText
+                    android:id="@+id/StudentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Student Name"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:inputType="textPersonName"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColorHint="#333446" />
+
+                <EditText
+                    android:id="@+id/StudentCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Course"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColorHint="#333446" />
+
+                <EditText
+                    android:id="@+id/StudentMajor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Major"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColorHint="#333446" />
+
+                <EditText
+                    android:id="@+id/StudentYearLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Year Level"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:inputType="number"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColorHint="#333446" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="10dp">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="8dp">
 
-            <TextView
-                android:layout_width="100dp"
+            <Button
+                android:id="@+id/AddUser"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Student No." />
-            
-            <EditText
-                android:id="@+id/StudentNumber"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
+                android:text="Add User"
+                android:fontFamily="@font/poppins_regular"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp" />
 
-        </LinearLayout>
-
-
-        <!-- 2. STUDENT NAME FIELD -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:layout_width="100dp"
+            <Button
+                android:id="@+id/UpdateUser"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Student Name" />
+                android:text="Update User"
+                android:fontFamily="@font/poppins_regular"
+                android:backgroundTint="#43A047"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp" />
 
-            <EditText
-                android:id="@+id/StudentName"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-        </LinearLayout>
-
-        <!-- 3. COURSE FIELD -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:layout_width="100dp"
+            <Button
+                android:id="@+id/SaveUser"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Course" />
+                android:text="Save User"
+                android:fontFamily="@font/poppins_regular"
+                android:backgroundTint="#388E3C"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp" />
 
-            <EditText
-                android:id="@+id/StudentCourse"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-        </LinearLayout>
-
-        <!-- 4. MAJOR FIELD -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:layout_width="100dp"
+            <Button
+                android:id="@+id/SearchUser"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Major" />
-
-            <EditText
-                android:id="@+id/StudentMajor"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
+                android:text="Search User"
+                android:fontFamily="@font/poppins_regular"
+                android:backgroundTint="#2E7D32"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
-
-        <!-- 5. YEAR LEVEL FIELD -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="Year Level" />
-
-            <EditText
-                android:id="@+id/StudentYearLevel"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-        </LinearLayout>
-
-        <!-- 6. CRUD BUTTONS -->
-        <Button
-            android:id="@+id/AddUser"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Add User"/>
-
-        <Button
-            android:id="@+id/UpdateUser"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Update User"/>
-
-        <Button
-            android:id="@+id/SaveUser"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Save User"/>
-
-        <Button
-            android:id="@+id/SearchUser"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Search User"/>
     </LinearLayout>
-
-</LinearLayout>
+</ScrollView>

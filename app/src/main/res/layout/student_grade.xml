@@ -1,155 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#e6f2ec"
+    android:padding="16dp">
 
-    <!-- STUDENT NO -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="10dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="100dp"
+        <!-- CARD CONTAINER -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Student No." />
+            android:background="#ffffff"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp"
+            android:clipToPadding="false">
 
-        <EditText
-            android:id="@+id/StudentNumber"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+            <!-- STUDENT NO -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student No."
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"/>
 
+            <EditText
+                android:id="@+id/StudentNumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:inputType="text"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingHorizontal="10dp"/>
+
+            <!-- SUBJECT -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <EditText
+                android:id="@+id/Subject"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:inputType="text"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingHorizontal="10dp"/>
+
+            <!-- PRELIM -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prelim"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <EditText
+                android:id="@+id/Prelim"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:inputType="numberDecimal"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingHorizontal="10dp"/>
+
+            <!-- MIDTERM -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Midterm"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <EditText
+                android:id="@+id/Midterm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:inputType="numberDecimal"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingHorizontal="10dp"/>
+
+            <!-- PRE-FINALS -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PreFinals"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <EditText
+                android:id="@+id/PreFinals"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:inputType="numberDecimal"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingHorizontal="10dp"/>
+
+            <!-- FX -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FX"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <EditText
+                android:id="@+id/Fx"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:inputType="numberDecimal"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingHorizontal="10dp"/>
+
+            <!-- FINAL GRADE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Final Grade"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <TextView
+                android:id="@+id/FinalGradeOutput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="#031f0c"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
     </LinearLayout>
-
-    <!-- SUBJECT -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="10dp">
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="Subject" />
-
-        <EditText
-            android:id="@+id/Subject"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-    </LinearLayout>
-
-    <!-- PRELIM -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="10dp">
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="Prelim" />
-
-        <EditText
-            android:id="@+id/Prelim"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-    </LinearLayout>
-
-    <!-- MIDTERM -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="10dp">
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="Midterm" />
-
-        <EditText
-            android:id="@+id/Midterm"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-    </LinearLayout>
-
-    <!-- PRE-FI -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="10dp">
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="PreFinals" />
-
-        <EditText
-            android:id="@+id/PreFinals"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-    </LinearLayout>
-
-    <!-- FX -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="10dp">
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="FX" />
-
-        <EditText
-            android:id="@+id/Fx"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-    </LinearLayout>
-
-    <!-- FG -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="10dp">
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="Final Grade" />
-
-        <TextView
-            android:id="@+id/FinalGradeOutput"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0" />
-
-    </LinearLayout>
-
-
-</LinearLayout>
+</ScrollView>

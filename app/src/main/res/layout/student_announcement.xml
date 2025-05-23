@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Announcements"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#031f0c"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Announcement Card 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#ffffff"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Holiday Advisory"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#031f0c"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Classes are suspended on May 26 due to the national holiday."
+                android:layout_marginTop="6dp"
+                android:textColor="#444444"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posted on: May 23, 2025"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
+                android:textColor="#888888"
+                android:fontFamily="@font/poppins_regular"/>
+        </LinearLayout>
+
+        <!-- Announcement Card 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#ffffff"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="System Maintenance"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#031f0c"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The student portal will be down from May 27 to May 28 for scheduled maintenance."
+                android:layout_marginTop="6dp"
+                android:textColor="#444444"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posted on: May 22, 2025"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
+                android:textColor="#888888"
+                android:fontFamily="@font/poppins_regular"/>
+        </LinearLayout>
+
+        <!-- Announcement Card 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#ffffff"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enrollment Reminder"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#031f0c"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enrollment for the next semester starts on June 1. Please prepare your documents."
+                android:layout_marginTop="6dp"
+                android:textColor="#444444"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posted on: May 20, 2025"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
+                android:textColor="#888888"
+                android:fontFamily="@font/poppins_regular"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

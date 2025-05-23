@@ -1,141 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#e6f2ec"
+    android:padding="16dp">
 
-    <!-- PSA -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:layout_margin="10dp"
+        android:clipToPadding="false">
 
+        <!-- Title -->
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_weight="1"
-            android:text="PSA"
-            android:gravity="center"
-            android:fontFamily="@font/poppins_regular"
-            android:background="@color/lightGray"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Requirements Status"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#031f0c"
+            android:layout_marginBottom="16dp" />
 
-        <TextView
-            android:id="@+id/psa"
-            android:layout_width="0dp"
+        <!-- Custom Row Style -->
+        <!-- PSA -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:layout_weight="1"
-            android:text="N/A"
-            android:gravity="center"
-            android:fontFamily="@font/poppins_regular"/>
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="PSA"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="#f0f0f0"
+                android:textColor="#031f0c" />
+
+            <TextView
+                android:id="@+id/psa"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="N/A"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#031f0c" />
+        </LinearLayout>
+
+        <!-- Repeat the pattern below for each row -->
+        <!-- Form 137 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Form 137"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="#f0f0f0"
+                android:textColor="#031f0c" />
+
+            <TextView
+                android:id="@+id/form137"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OK"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#031f0c" />
+        </LinearLayout>
+
+        <!-- Good Moral -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Good Moral"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="#f0f0f0"
+                android:textColor="#031f0c" />
+
+            <TextView
+                android:id="@+id/goodmoral"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OK"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#031f0c" />
+        </LinearLayout>
+
+        <!-- Exam -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Exam"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="#f0f0f0"
+                android:textColor="#031f0c" />
+
+            <TextView
+                android:id="@+id/exam"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OK"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#031f0c" />
+        </LinearLayout>
+
+        <!-- Interview -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Interview"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="#f0f0f0"
+                android:textColor="#031f0c" />
+
+            <TextView
+                android:id="@+id/interview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OK"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#031f0c" />
+        </LinearLayout>
     </LinearLayout>
-
-    <!-- FORM 137 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_weight="1"
-            android:text="Form 137"
-            android:gravity="center"
-            android:fontFamily="@font/poppins_regular"
-            android:background="@color/lightGray"/>
-
-        <TextView
-            android:id="@+id/form137"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_weight="1"
-            android:text="OK"
-            android:gravity="center"
-            android:fontFamily="@font/poppins_regular"/>
-
-    </LinearLayout>
-
-    <!-- GOOD MORAL -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_weight="1"
-            android:text="Good Moral"
-            android:gravity="center"
-            android:fontFamily="@font/poppins_regular"
-            android:background="@color/lightGray"/>
-
-        <TextView
-            android:id="@+id/goodmoral"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_weight="1"
-            android:text="OK"
-            android:gravity="center"
-            android:fontFamily="@font/poppins_regular"/>
-
-    </LinearLayout>
-
-    <!-- EXAM -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_weight="1"
-            android:text="Exam"
-            android:gravity="center"
-            android:fontFamily="@font/poppins_regular"
-            android:background="@color/lightGray"/>
-
-        <TextView
-            android:id="@+id/exam"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_weight="1"
-            android:text="OK"
-            android:gravity="center"
-            android:fontFamily="@font/poppins_regular"/>
-
-    </LinearLayout>
-
-    <!-- INTERVIEW -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_weight="1"
-            android:text="Interview"
-            android:gravity="center"
-            android:fontFamily="@font/poppins_regular"
-            android:background="@color/lightGray"/>
-
-        <TextView
-            android:id="@+id/interview"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_weight="1"
-            android:text="OK"
-            android:gravity="center"
-            android:fontFamily="@font/poppins_regular"/>
-
-    </LinearLayout>
-</LinearLayout>
+</ScrollView>
